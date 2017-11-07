@@ -21,6 +21,7 @@ body {
     
     line-height: 1.5em;
     font-size: 1.8rem;
+    overflow-y:scroll;
 }
 
 h3 strong {
@@ -225,6 +226,20 @@ nav ul {
     padding-top: 28px;
     padding-bottom: 13px;
     margin: 0 auto;
+}
+
+.nav-main .searchBox input {
+    background-color: #2b2b2b;
+    height: 100px;
+    width: 175px;
+    padding: 0 10px;
+    border: 0;
+    border-right: 1px solid #393939;
+    color: #cccccc;
+}
+
+.nav-main .searchBox input:focus {
+    outline: none;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
@@ -1193,6 +1208,10 @@ fieldset.face-to-name::after,
 *    L O G I N   F O R M
 *    =-=-=-=-=-=-=-=-=-=
 */
+
+#loginBox {
+    display: none;
+}
 
 #loginForm {
     padding: 0 10vw;
