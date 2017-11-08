@@ -1,5 +1,4 @@
 
-
 var username = document.getElementById("username");
 var password = document.getElementById("password");
 
@@ -21,17 +20,6 @@ function onMenuToggle(e) {
     
     var navMain = document.querySelector(".nav-main");
     navMain.classList.toggle("active");
-}
-
-function onLoginClick(e) {
-    e.preventDefault();
-    var loginBox = document.getElementById("loginBox");
-    if(loginBox.style.display === "block") {
-        loginBox.style.display = "none";
-    }
-    else {
-        loginBox.style.display = "block";
-    }
 }
 
 function onUsernameValChange() {
@@ -61,6 +49,14 @@ function onPasswordValChange() {
     }
 }
 
+function onUserClick(e) {
+    var userIFrame = document.getElementById("userIFrame");
+    e.preventDefault();
+    userIFrame.src = "student.html";
+    userIFrame.style.display = "block";
+    setTimeout(function () {userIFrame.style.opacity = 1;}, 1);
+}
+
 function bindEvents() {
     var forward = document.querySelector(".page-actions .forward");
     if (forward)
@@ -71,11 +67,11 @@ function bindEvents() {
     var menu = document.querySelector(".menu a");
     menu.addEventListener("click", onMenuToggle);
 
-    var login = document.querySelector(".nav-utility li");
-    // login.addEventListener("click", onLoginClick);
+    username && username.addEventListener("input", onUsernameValChange);
+    password && password.addEventListener("input", onPasswordValChange);
 
-    username.addEventListener("input", onUsernameValChange);
-    password.addEventListener("input", onPasswordValChange);
+    var userLink = document.getElementById("user");
+    userLink && userLink.addEventListener("click", onUserClick);
 }
 
 bindEvents();

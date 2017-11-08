@@ -20,10 +20,25 @@
                     </nav>
                     <nav class="nav-utility">
                         <ul>
-                            <li><a href="#">Ivan Waumans</a></li>
+                            <li id="login"><a href="#">Inloggen</a></li>
                         </ul>
-                        
+
                     </nav>
+                </div>
+                <div id="loginBox">
+                    <form id="loginForm">
+                        <div>
+                            <label class="placeholder" for="username" id="usernameLabel">Username</label>
+                            <input type="text" id="username"  />
+                        </div>
+                        <div>
+                            <label class="placeholder" for="password" id="passwordLabel">Password</label>
+                            <input type="password" id="password" />
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="black-banner">
@@ -53,6 +68,7 @@
                             <li class="practice"><a href="oefenen.html">Oefenen</a></li>
                             <li class="manage"><a href="beheer.html">Beheer</a></li>
                             <li class="search"><a href="#">Zoeken</a></li>
+                            <li class="searchBox"><input type="text" placeholder="Search"/></li>
                         </ul>
                     </nav>
                 </div>
@@ -88,119 +104,123 @@
         </header>
 
         <main>
-            <div class="wrapper">
-                <h2>Alle studenten</h2>
-                
-                <a href="oefenen-naam-bij-gezicht-mc.html" class="btn practice">Oefenen</a>
-                
-                <ul class="people">
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/anniek-de-water.jpg">
-                            <figcaption>Anniek De Water</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/dillan-morel.jpg">
-                            <figcaption>Dillan Morel</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/flynn-van-niel.jpg">
-                            <figcaption>Flynn van Niel</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/hans-de-langen.jpg">
-                            <figcaption>Hans De Langen</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/indigo-van-denderen.jpg">
-                            <figcaption>Indigo Van Denderen</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <a href="beheer-student-detail.html">
-                            <figure class="avatar big">
-                                <img src="images/studenten/jense-wallenburg.jpg">
-                                <figcaption>Jense Wallenburg</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/lander-kloosterman.jpg">
-                            <figcaption>Lander Kloosterman</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/lander-ten-hoven.jpg">
-                            <figcaption>Lander Ten Hove</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/marlene-van-de-laak.jpg">
-                            <figcaption>Marlene van de Laak</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/mattijs-palmen.jpg">
-                            <figcaption>Mattijs Palmen</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/matijs-van-peer.jpg">
-                            <figcaption>Mattijs Van Peer</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/nicolle-clements.jpg">
-                            <figcaption>Nicole Clements</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/roan-van-ingen.jpg">
-                            <figcaption>Roan van Ingen</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/saima-kaffa.jpg">
-                            <figcaption>Saima Kaffa</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/senne-van-den-bogaart.jpg">
-                            <figcaption>Senne van den Bogaart</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/senne-van-loo.jpg">
-                            <figcaption>Senne Van Loo</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="avatar big">
-                            <img src="images/studenten/timmo-duiker.jpg">
-                            <figcaption>Timmo Duiker</figcaption>
-                        </figure>
-                    </li>
+            <iframe src="" id="userIFrame"></iframe>
+            <div class="content">
+                <div class="wrapper">
+                    <h2>Alle studenten</h2>
 
-                </ul>
+                    <a href="oefenen-naam-bij-gezicht-mc.html" class="btn practice">Oefenen</a>
+
+                    <ul class="people">
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/anniek-de-water.jpg">
+                                <figcaption>Anniek De Water</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/dillan-morel.jpg">
+                                <figcaption>Dillan Morel</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/flynn-van-niel.jpg">
+                                <figcaption>Flynn van Niel</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/hans-de-langen.jpg">
+                                <figcaption>Hans De Langen</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/indigo-van-denderen.jpg">
+                                <figcaption>Indigo Van Denderen</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="beheer-student-detail.html" id="user">
+                                <figure class="avatar big">
+                                    <img src="images/studenten/jense-wallenburg.jpg">
+                                    <figcaption>Jense Wallenburg</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/lander-kloosterman.jpg">
+                                <figcaption>Lander Kloosterman</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/lander-ten-hoven.jpg">
+                                <figcaption>Lander Ten Hove</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/marlene-van-de-laak.jpg">
+                                <figcaption>Marlene van de Laak</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/mattijs-palmen.jpg">
+                                <figcaption>Mattijs Palmen</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/matijs-van-peer.jpg">
+                                <figcaption>Mattijs Van Peer</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/nicolle-clements.jpg">
+                                <figcaption>Nicole Clements</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/roan-van-ingen.jpg">
+                                <figcaption>Roan van Ingen</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/saima-kaffa.jpg">
+                                <figcaption>Saima Kaffa</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/senne-van-den-bogaart.jpg">
+                                <figcaption>Senne van den Bogaart</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/senne-van-loo.jpg">
+                                <figcaption>Senne Van Loo</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="avatar big">
+                                <img src="images/studenten/timmo-duiker.jpg">
+                                <figcaption>Timmo Duiker</figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
+            <div style="clear: both;"></div>
         </main>
 
         <footer>
@@ -234,7 +254,9 @@
             </div>
         </footer>
     </div>
-    
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
